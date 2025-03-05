@@ -7,7 +7,6 @@ body {
     display: flex;
 }
 
-/* Barra lateral */
 .sidebar {
     width: 60px;
     background-color: #1e1e1e;
@@ -44,7 +43,6 @@ body {
     border-radius: 50%;
 }
 
-/* Estilos del contenedor principal */
 main {
     flex: 1;
     padding: 20px;
@@ -76,7 +74,6 @@ header h2 {
     cursor: pointer;
 }
 
-/* Botones de acción */
 .buttons {
     display: flex;
     gap: 10px;
@@ -91,7 +88,6 @@ header h2 {
     border-radius: 5px;
 }
 
-/* Estilos de tarjetas */
 .cards {
     display: flex;
     gap: 20px;
@@ -120,7 +116,6 @@ header h2 {
     border-radius: 5px;
 }
 
-/* Estilos de la página agregar */
 .container {
     background: white;
     padding: 100px;
@@ -169,7 +164,6 @@ button#cancelar {
     color: white;
 }
 
-/* Estilos de los inputs en la página agregar */
 .imagen-upload {
     margin-bottom: 20px;
 }
