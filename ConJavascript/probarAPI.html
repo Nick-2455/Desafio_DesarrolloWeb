@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Proveedores</title>
+</head>
+<body>
+    <h1>Proveedores</h1>
+    <div id="proveedoresContainer"></div>
+
+    <script>
+        const apiURL = "https://67dcbd0de00db03c4068c5a8.mockapi.io/proveedores";
+
+
+        fetch(apiURL)
+            .then(res => res.json())
+            .then(proveedores => {
+                const container = document.getElementById("proveedoresContainer");
+                proveedores.forEach(proveedor => {
+                    const div = document.createElement("div");
+                    div.innerHTML = `
+                        <h3>${proveedor.nombre}</h3>
+                        <img src="${proveedor.imagen}" width="100"><br>
+                        <p>${proveedor.insumos}</p>
+                        <hr>
+                    `;
+                    container.appendChild(div);
+                });
+            })
+            .catch(err => {
+                console.error("Error al cargar los datos:", err);
+            });
+    </script>
+</body>
+</html>
